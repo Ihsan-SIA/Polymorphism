@@ -1,0 +1,12 @@
+﻿Picture aPic = new();
+Tool bTool = aPic;
+Pen aPen = new();
+aPic.Enlarge();
+Canvas aCanvas = new();
+List<Tool> aList = new List<Tool>();
+aList.Add(bTool);
+aList.Add(aPen);
+aList.Add(aPic);
+aCanvas.DrawShapes(aList);
+Console.WriteLine(aList.Count);
+Console.WriteLine("Execution done....");
